@@ -14,11 +14,24 @@
         <input type = "radio" id = "mantra-radio" name = "message-type" value = "mantras">
         <em><label for = "mantra">mantra</label></em><br>
       </form>
-        <button class = "receive-button">Receive Message</button>
+        <button class = "button" id = "receive-button">Receive Message</button>
     </section>
-    <section class = "message-section">
-      <img src = "assets/meditate.svg" alt = "meditation icon">
+    <section class = "message-section" id = "message-section">
+      <img src = "assets/meditate.svg" alt = "meditation icon" id = "meditation"><br>
+      <button class = "button" id = "add-message-button">Add Message</button>
+      <form id = "user-form" class = "hidden">
+        <label for = "user-message">Your Message:</label>
+        <input text class = "user-message-input" id = "user-message-input">
+        <label for = "user-type">Type of Message:</label>
+        <input list = "types" class = "user-type-input" id = "user-type-input">
+          <datalist id = "types">
+            <option value = "mantra">
+            <option value = "affirmation">
+          </datalist><br><br>
+        </form>
+        <button class = "button hidden" id = "submit-button">Submit</button>
     </section>
-    <script type="text/javascript" src="main.js" class = "meditation-img"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="lists.js"></script>
   </body>
 </html>
