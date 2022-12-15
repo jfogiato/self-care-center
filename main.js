@@ -72,13 +72,28 @@ var mantras = [
 
 var currentMessage;
 
-var radios = document.querySelectorAll('input[name = "message-type"]')
-var recvBtn = document.querySelector('.receive-button');
-var msgSctn = document.querySelector('.message-section');
+var radios = document.querySelectorAll('input[name = "message-type"]');
+var recvBtn = document.getElementById('receive-button');
+var msgSctn = document.getElementById('message-section');
+var userBtn = document.getElementById('add-message-button');
+var submitBtn = document.getElementById('submit-button');
+var userForm = document.getElementById('user-form');
+var icon = document.getElementById('meditation');
 
 recvBtn.addEventListener('click', () => {
   getMessage(getRadio());
   pushMessage();
+})
+
+userBtn.addEventListener('click', () => {
+  submitBtn.classList.toggle('hidden')
+  userForm.classList.toggle('hidden')
+  userBtn.classList.toggle('hidden')
+  icon.classList.toggle('hidden')
+})
+
+submitBtn.addEventListener('click', () => {
+
 })
 
 function getRadio() {
@@ -94,15 +109,39 @@ function getRadio() {
 function getMessage(radio) {
     if (radio === 'mantras') {
         currentMessage = mantras[getRandomIndex(mantras)];
-    } else {
+    } else if (radio === 'affirmations') {
         currentMessage = affirmations[getRandomIndex(affirmations)];
+    } else {
+        alert('🌜✨Please pick an option!✨🌛');
     }
 }
 
 function pushMessage() {
-  msgSctn.innerHTML = `${currentMessage}`
+  currentMessage ? msgSctn.innerHTML = `${currentMessage}` : msgSctn;
 }
 
 function getRandomIndex(array) {
   return Math.floor((Math.random() * array.length));
 }
+
+
+
+/*
+
+-If the user doesn’t specify the type of message, they should get an error and be unable to submit their message until the type is specified.
+-When the user clicks the “Submit” button and that message will be added to the appropriate list of messages.
+-When a new message is added, that message should automatically be displayed in the message box, instead of the meditation icon.
+-As you add these new elements to the page, be sure to match the style of existing elements.
+
+
+
+
+
+-Add an “Add Message” button in a logical spot.
+-When the user clicks “Add Message” a form will appear in the message box. The form should contain two inputs - one to specify which type of message is being added, and another to add the text of the message itself. The form should also contain a “Submit” button.
+
+
+
+
+
+*/

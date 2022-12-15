@@ -45,7 +45,7 @@ h2 {
     justify-content: center;
 }
 
-.receive-button {
+.button {
     font-family: 'Quicksand', sans-serif;
     font-size: larger;
     color: #ffffff;
@@ -68,6 +68,7 @@ h2 {
     background-color: #ffffff;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 img {
@@ -95,12 +96,12 @@ img {
     margin-right: 180px;
 }
 
-/*
+.hidden {
+    display: none;
+}
 
-
-
-script {
-    align-self: auto;
+.user-message-input {
+    margin-right: 70px;
 }
 
 
