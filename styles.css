@@ -6,3 +6,102 @@ dark-blue - #134d71;
 white - #ffffff;
 black - #000000;
 */
+
+
+html {
+    font-family: 'Quicksand', sans-serif;
+    background-image: linear-gradient(#134d71, #78a7c6, #f7e4bf);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100%;
+}
+
+h1 {
+    color: #ffffff;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+h2 {
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.user-section {
+    display: flex;
+    width: 40%;
+    height: 115px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.receive-button {
+    font-family: 'Quicksand', sans-serif;
+    font-size: larger;
+    color: #ffffff;
+    background-color: #134d71;
+    border-radius: 5px;
+    margin: 10px;
+    border: none;
+    width: 200px;
+    height: 33px;
+}
+
+.message-section {
+    display: flex;
+    margin: 200px;
+    margin-top: 150px;
+    border-radius: 8px;
+    height: 120px;
+    padding: 30px;
+    width: 65%;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 75%;
+    height: 75%;
+}
+
+.user-form {
+    display: flex;
+    font-size: larger;
+    margin: 10px;
+    align-content: center;
+    justify-content: center;
+    background-color: #ffffff;
+    align-items: flex-start;
+}
+
+#affirmation-radio, #mantra-radio {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+}
+
+.affirmation-label {
+    margin-right: 180px;
+}
+
+/*
+
+
+
+script {
+    align-self: auto;
+}
+
+
+
