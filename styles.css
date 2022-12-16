@@ -38,9 +38,9 @@ h2 {
     font-size: 175%;
 }
 
-.user-section {
+.choice-section {
     display: flex;
-    width: 40%;
+    width: 100%;
     height: 115px;
     border-radius: 8px;
     background-color: #ffffff;
@@ -63,8 +63,7 @@ h2 {
 
 .message-section {
     display: flex;
-    margin: 200px;
-    margin-top: 150px;
+    margin-top: 100px;
     margin-bottom: 10px;
     border-radius: 8px;
     height: 120px;
@@ -76,7 +75,7 @@ h2 {
     flex-direction: column;
 }
 
-img {
+#meditation {
     width: 75%;
     height: 75%;
 }
@@ -108,11 +107,14 @@ img {
 
 .user-message-input {
     margin-right: 70px;
+    font-family: 'Quicksand', sans-serif;
 }
 
-/* #add-message-button {
-    margin-bottom: 50%;
-} */
-
-
-
+.main-section {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
