@@ -9,16 +9,20 @@
     <h2>Which type of message?</h2>
     <section class = "user-section">
       <form class = "user-form">
-        <input type = "radio" id = "affirmation-radio" name = "message-type" value = "affirmations">
-        <em><label for = "affirmation" class = "affirmation-label">affirmation</label></em>
-        <input type = "radio" id = "mantra-radio" name = "message-type" value = "mantras">
-        <em><label for = "mantra">mantra</label></em><br>
+        <div>
+          <input type = "radio" id = "affirmation-radio" name = "message-type" value = "affirmations">
+          <em><label for = "affirmation" class = "affirmation-label">affirmation</label></em>
+        </div>
+        <div>
+          <input type = "radio" id = "mantra-radio" name = "message-type" value = "mantras">
+          <em><label for = "mantra">mantra</label></em><br>
+        </div>
       </form>
         <button class = "button" id = "receive-button">Receive Message</button>
     </section>
     <section class = "message-section" id = "message-section">
       <img src = "assets/meditate.svg" alt = "meditation icon" id = "meditation"><br>
-      <button class = "button" id = "add-message-button">Add Message</button>
+      <span id = "current-message hidden"></span>
       <form id = "user-form" class = "hidden">
         <label for = "user-message">Your Message:</label>
         <input text class = "user-message-input" id = "user-message-input">
@@ -31,6 +35,7 @@
         </form>
         <button class = "button hidden" id = "submit-button">Submit</button>
     </section>
+    <button class = "button" id = "add-message-button">Add Message</button>
     <script type="text/javascript" src="main.js"></script>
     <script type="text/javascript" src="lists.js"></script>
   </body>
