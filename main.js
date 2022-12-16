@@ -1,4 +1,5 @@
 // Global variables targeting DOM elements 👇
+var currentMessageDisplay = document.getElementById('current-message');
 var radios = document.querySelectorAll('input[name = "message-type"]');
 var recvBtn = document.getElementById('receive-button');
 var msgSctn = document.getElementById('message-section');
@@ -15,17 +16,16 @@ var currentMessage;
 recvBtn.addEventListener('click', () => {
   getMessage(getRadio());
   pushMessage();
+  submitBtn.classList.add('hidden');
+  userForm.classList.add('hidden');
 })
 
 userBtn.addEventListener('click', () => {
-  submitBtn.classList.toggle('hidden');
-  userForm.classList.toggle('hidden');
-  userBtn.classList.toggle('hidden');
-  icon.classList.toggle('hidden');
+  toggleHidden();
 })
 
 submitBtn.addEventListener('click', () => {
-  userTypeInput.value ? submitMessage() : alert('🌜✨Please pick a type!✨🌛');
+    userTypeInput.value ? submitMessage() : alert('🌜✨Please pick a type!✨🌛');
 })
 
 // Functions 👇
@@ -41,6 +41,10 @@ function submitMessage() {
     currentMessage = userMessage;
     pushMessage();
   }
+  submitBtn.classList.add('hidden');
+  userForm.classList.add('hidden');
+  userMessage = "";
+  userType = "";
 }
 
 function getRadio() {
@@ -64,11 +68,20 @@ function getMessage(radio) {
 }
 
 function pushMessage() {
-  currentMessage ? msgSctn.innerHTML = `${currentMessage}` : msgSctn;
+  icon.classList.add('hidden');
+  currentMessageDisplay.classList.remove('hidden')
+  currentMessage ? currentMessageDisplay.innerText = `${currentMessage}` : currentMessageDisplay;
 }
 
 function getRandomIndex(array) {
   return Math.floor((Math.random() * array.length));
+}
+
+function toggleHidden() {
+  currentMessageDisplay.classList.toggle('hidden');
+  icon.classList.add('hidden');
+  submitBtn.classList.toggle('hidden');
+  userForm.classList.toggle('hidden');
 }
 
 ;
