@@ -6,20 +6,26 @@
   </head>
   <body>
     <h1>✨Self Care Center✨</h1>
-    <h2>Which type of message?</h2>
-    <section class = "user-section">
-      <form class = "user-form">
-        <input type = "radio" id = "affirmation-radio" name = "message-type" value = "affirmations">
-        <em><label for = "affirmation" class = "affirmation-label">affirmation</label></em>
-        <input type = "radio" id = "mantra-radio" name = "message-type" value = "mantras">
-        <em><label for = "mantra">mantra</label></em><br>
-      </form>
-        <button class = "button" id = "receive-button">Receive Message</button>
-    </section>
+    <div class = "main-section">
+      <h2>Which type of message?</h2>
+      <section class = "choice-section">
+        <form class = "user-form">
+          <div>
+            <input type = "radio" id = "affirmation-radio" name = "message-type" value = "affirmations">
+            <em><label for = "affirmation" class = "affirmation-label">affirmation</label></em>
+          </div>
+          <div>
+            <input type = "radio" id = "mantra-radio" name = "message-type" value = "mantras">
+            <em><label for = "mantra">mantra</label></em><br>
+          </div>
+        </form>
+          <button class = "button" id = "receive-button">Receive Message</button>
+      </section>
+    </div>
     <section class = "message-section" id = "message-section">
       <img src = "assets/meditate.svg" alt = "meditation icon" id = "meditation"><br>
-      <button class = "button" id = "add-message-button">Add Message</button>
-      <form id = "user-form" class = "hidden">
+      <span id = "current-message" class = "hidden"></span>
+      <form id = "byo-form" class = "hidden">
         <label for = "user-message">Your Message:</label>
         <input text class = "user-message-input" id = "user-message-input">
         <label for = "user-type">Type of Message:</label>
@@ -31,6 +37,7 @@
         </form>
         <button class = "button hidden" id = "submit-button">Submit</button>
     </section>
+    <button class = "button" id = "add-message-button">Add Message</button>
     <script type="text/javascript" src="main.js"></script>
     <script type="text/javascript" src="lists.js"></script>
   </body>
