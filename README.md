@@ -1,51 +1,39 @@
-# Self Care Center
-## Overview
-How can I care for myself? One way is with affirmations and mantras!
-Affirmations are thoughts of positive self-empowerment, meant to assert your self-worth.
-Mantras are repetive phrases that are repeated again and again during mindfulness practices. Your challenge is to build an app that helps users remind themselves of their inherent value!
-
-This Solo Challenge gives students and instructors the opportunity to get a pulse on where you are with the foundational concepts of Module 1 curriculum. Students should use this as an opportunity to challenge themselves and work completely independently. Google can (and probably should!) be used, but any other code base should not be referenced. Instructors will be able to use your work, both completion of functionality and code quality, to determine where you stand and if you are behind for this point in the module, provide supports to intervene.
-
-The spec for this project can be found [here](https://frontend.turing.io/projects/module-1/self-care-center.html). 
-
-## Learning Goals
-
-- Gain experience building an application that utilizes HTML, CSS and JavaScript
-- Write HTML and CSS to match a provided comp
-- Understand how to listen to and respond to user events
-- Individualize your programming skill set
-
-## Setup
-
-- Fork this project to your own Github account
-- Clone the repository to your local machine
-- `cd` into the project
-- Read this README thoroughly, then begin working!
-
-______________________________________________________  
-# README Template  
-Before turning this project in, erase this line and everything above it and fill in the info below.  
-______________________________________________________  
-
 # Self-Care Center 
 
-### Abstract:
-[//]: <> (Briefly describe what you built and its features. What problem is the app solving? How does this application solve that problem?)
+## Abstract:
+[//]: <> 
+Given a comp, I built out an application that allows users to receive either an affirmation or mantra. The user is then given a randomly generated message with words of encouragement and guidance. Additionally, users can also generate their own mantra or affirmation which is then displayed on the page. 
 
-### Installation Instructions:
-[//]: <> (What steps does a person have to take to get your app cloned down and running?)
+## Installation Instructions:
+[//]: <> 
+1. Fork and clone [this repo](https://github.com/jfogiato/self-care-center)
+1. Copy the SSH key from the green "Code" button within the repo.
+1. In your terminal, use the command `git clone git@github.com:[the link to your repo]`.
+1. Open the repo in your text editor to make any changes or inspect code.
+1. Use `open index.html` to open the app in your browser.
 
-### Preview of App:
-[//]: <> (Provide ONE gif or screenshot of your application - choose the "coolest" piece of functionality to show off.)
+## Preview of App:
+[//]: <> 
+![ezgif com-gif-maker (4)](https://user-images.githubusercontent.com/57634618/208246465-cb75953a-b9c7-4491-b2e5-b79f9bcf107b.gif)
 
-### Context:
-[//]: <> (Give some context for the project here. How long did you have to work on it? How far into the Turing program are you?)
+## Context:
+[//]: <>
+For this project, a comp image was given to us and we were tasked with replecating the style and layout in our application. We had an MVP requirement to be able to generate random affirmations and mantras from a given list. Additionally, I chose to add a feature to allow users to submit their own message via form. This project took approximately 10 hours to complete. This was the third project in Mod 1 of Turing, and the second solo project of the program so far. 
 
-### Contributors:
-[//]: <> (Who worked on this application? Link to their GitHubs.)
+## Contributors:
+[//]: <>
+[Joseph (Joe) Fogiato](https://gist.github.com/jfogiato)
 
-### Learning Goals:
-[//]: <> (What were the learning goals of this project? What tech did you work with?)
+## Learning Goals:
+[//]: <>
+The learning goals of this project were (1) to gain experience building an app that utilizes HTML, CSS, and Javascript, (2) write HTML and CSS to match a provided comp, (3) understand how to listen to and respond to user events, and (4) continue to individualize my programming skill set. 
 
-### Wins + Challenges:
-[//]: <> (What are 2-3 wins you have from this project? What were some challenges you faced - and how did you get over them?)
+I used HTML, CSS, Javascript, VS Code, DevTools, Git, GitHub, and the command line to complete this project.
+
+## Wins + Challenges:
+[//]: <> 
+One win that I am proud of is the ability of the app to be open-ended while in a user session. Initially, once the user opted to create their own message, that option went away and you could only generate a random message. Through some restructuring of the code, I was able to build out functionality that allows the user to continue to build their own message and receive pre-selected messages infinitely.
+
+This project also allowed me to gain greater insight into using CSS flex boxes to make the application page more dynamic with regards to how the DOM is displayed. Rather than hard-coding styling for each element to match the comp, I utilized flex boxes to align elements accordingly which allows the page to look presentable on any size screen.
+
+Although ultimately I consider the CSS portion of this project a "win", it was also a challenge. Understanding how nested elements interact both with one another and inside their parent element when using CSS flex was challenging and took lots of trial and error. 
